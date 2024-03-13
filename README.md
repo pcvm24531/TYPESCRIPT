@@ -21,17 +21,56 @@ Para observar todo un proyecto typescript ejecutamos
 
 ## TIPOS DE DATOS
 ### Primitivos
-* String:
-* Number:
+Los datos primitivos son tipados del siguiente modo **let var : string = 'Hola Mundo'**
+* String: 
+    * Comillas Dobles => "Texto"
+        ```javascript
+        let cadena: string = "Hola Mundo";
+    * Comilla Simple => 'Texto'
+        ```javascript
+        let cadena: string = 'Hola Mundo';
+    * Comilla inversa => `${var}`
+        ```javascript
+        let cadena: string = `Hola ${mundo}`;
+* Number: 
+    * Enteros
+        ```javascript
+        let num: number = 10;
+    * Decimal
+        ```javascript
+        let dec: number = 10.5;
+    * Exponencial
+        ```javascript
+        let exp: number = 2.5e3;
+    * Exponencial negativa
+        ```javascript
+        let expNeg: number = 2.5e-2;
+    * Hexadecimal
+        ```javascript
+        let hexa: number = 0xA;
+    * Octales
+        ```javascript
+        let oct: number => =o12;
+    * Binarios
+        ```javascript
+        let bin: number = 0b1010;
 * Boolean:
-* Undefined:
-* Null: 
+    ```javascript
+    let bool1:boolean = true / false
+* Undefined: No se ha asignado un valor
+    ```javascript
+    let varUndefined: undefined;
+    varUndefined = undefined;
+* Null: Son variables que se pueden inicializar como los undefined
+    ```javascript
+    let varNull: null;
+    varNull = null;
 ### Compuestos Estructurados
-* Object
-* Array
-* Enum
-* Function
+* Object: 
+* Array:
+* Enum:
+* Function:
 ### Definidos por Usuario
-* Class
-* Interface
-* Type
+* Class:
+* Interface:
+* Type:
