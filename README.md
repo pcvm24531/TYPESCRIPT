@@ -68,6 +68,15 @@ Los datos primitivos son tipados del siguiente modo **let var : string = 'Hola M
     ```javascript
     let varNull: null;
     varNull = null;
+* ANY: Tipo de dato que que se debe evitar usar
+    ```javascript
+    let edad: any;
+    edad = 12;
+    console.log(edad);
+    edad = "Doce años";
+    console.log( edad );
+    edad = true;
+    console.log(edad);
 ### Compuestos Estructurados
 * Object: Los objetos no son tipados como los datos primitivos, para los objetos es necesario usar interfaces.
     ```javascript
@@ -121,3 +130,4 @@ Los datos primitivos son tipados del siguiente modo **let var : string = 'Hola M
 * Class:
 * Interface:
 * Type:
+

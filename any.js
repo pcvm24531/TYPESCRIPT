@@ -1,6 +1,6 @@
 "use strict";
 /*Permite declarar variables, arreglos de cualquier tipo
-*Any viene a ser ualquier tipo de dato, en lo posible hay que evitar su uso
+*Any viene a ser cualquier tipo de dato, en lo posible hay que evitar su uso
 */
 let edad;
 edad = 12;
