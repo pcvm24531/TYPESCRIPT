@@ -127,7 +127,52 @@ Los datos primitivos son tipados del siguiente modo **let var : string = 'Hola M
     }
 
 ### Definidos por Usuario
-* Class:
-* Interface:
-* Type:
+* Class: Los objetos infieren os tipos de datos de sus propiedades, si creamos otro objeto con la propiedad come de tipo string, inmediatamente typescrip muestra error.
+    ```Javascript
+    let programador = {
+        nombre: "Pablo",
+        tecnologias:['React','JS'],
+        come: true
+    }
+* Interface: Es parecido a los type, pero se usan para cosas distintas.
+    ```Javascript
+    interface Developer{
+    nombre:string,
+    tecnologias:string[],
+    tomaCafe:boolean | null,
+    }
+
+    let dev1 :Developer = {
+        nombre:'Pablo',
+        tecnologias: ['PHP','JS'],
+        tomaCafe: true,
+    }
+    let dev2: Developer = {
+        nombre: 'Raul',
+        tecnologias: ['Typescript','React'],
+        tomaCafe: false,
+    }
+
+    function enviarCV(programador:Developer) {
+        console.log(`El CV de ${programador.nombre}`);    
+    }
+
+    enviarCV(dev1);
+    enviarCV(dev2);
+* Type: Con este tipo personalizado podemos tipar objetos
+    ```Javascript
+    type Programador = {
+        nombre: string,
+        tecnologias: string[],
+        tomarCafe: boolean|null,//Indicamos los posibles valores que puede tomar
+    }
+    let programador: Programador = {
+        nombre: "Pablo",
+        tecnologias:['React','JS'],
+        come: true//Error porque no existe el atributo come
+    }
+    let programador2: Programador ={//Error porque falta el atributo nombre
+        tecnologias:['C++','Java'],
+        tomarCafe: null
+    }
 

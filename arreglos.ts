@@ -4,3 +4,4 @@ let texto: string[] = ['HTML','CSS','JS'];
 numeros.indexOf(1);
 
 texto.forEach((val)=>console.log(val));
+
