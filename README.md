@@ -127,13 +127,14 @@ Los datos primitivos son tipados del siguiente modo **let var : string = 'Hola M
     }
 
 ### Definidos por Usuario
-* Class: Los objetos infieren os tipos de datos de sus propiedades, si creamos otro objeto con la propiedad come de tipo string, inmediatamente typescrip muestra error.
+* Class: Los objetos infieren los tipos de datos de sus propiedades, si creamos otro objeto con la propiedad come de tipo string, inmediatamente typescrip muestra error.
     ```Javascript
     let programador = {
         nombre: "Pablo",
         tecnologias:['React','JS'],
         come: true
     }
+
 * Interface: Es parecido a los type, pero se usan para cosas distintas.
     ```Javascript
     interface Developer{
@@ -159,6 +160,7 @@ Los datos primitivos son tipados del siguiente modo **let var : string = 'Hola M
 
     enviarCV(dev1);
     enviarCV(dev2);
+    
 * Type: Con este tipo personalizado podemos tipar objetos
     ```Javascript
     type Programador = {
