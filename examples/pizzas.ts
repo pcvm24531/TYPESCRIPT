@@ -40,4 +40,13 @@ function completeOrder(orderId: number): Order | undefined {
     return order;
 }
 
-console.log( menu );
+addNewPizzaToMenu({ name: "Chicken Bacon Ranch", price: 11 });
+addNewPizzaToMenu({ name: "BBQ Chicken", price: 12 });
+addNewPizzaToMenu({ name: "Spicy Sausage", price: 13 });
+
+placeOrder("Chicken Bacon Ranch");
+completeOrder(1);
+
+console.log("Menu:", menu);
+console.log("Cash in register:", cashInRegister);
+console.log("Order Queeue:", orderQueue);
